@@ -5,9 +5,13 @@
  */
 package dailyprogramming;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 /**
  *
- * @author benrh
+ * @author BenHaas
  */
 public class DailyProgramming {
 
@@ -15,11 +19,13 @@ public class DailyProgramming {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.println(IBeforeE.check("abeyancies"));
         try {
-            DiceRoller364.diceRoll();
-        } catch (Exception e){
-            System.out.println(e.getMessage());
+            System.out.println(IBeforeE.checkFile(new File("C:\\Users\\BenHaas\\Documents\\NetBeansProjects\\DailyProgramming\\enable1.txt")));
+        } catch (FileNotFoundException e) {
+            System.out.println("File Not Found :(");
         }
+        
     }
     
 }
