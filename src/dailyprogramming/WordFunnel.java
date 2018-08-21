@@ -53,8 +53,6 @@ public class WordFunnel {
         int wordsTested = 0;
         for (String word : words) {
             if(WordFunnel.getFunnels(word, wordList).size() >= 5) count ++;
-            wordsTested++;
-            if(wordsTested%100 == 0) System.out.println(wordsTested);
         }
         return count;
     }
