@@ -12,6 +12,7 @@ import java.util.Scanner;
 /**
  *
  * @author BenHaas
+ * https://www.reddit.com/r/dailyprogrammer/comments/8q96da/20180611_challenge_363_easy_i_before_e_except/
  */
 public class IBeforeE {
     public static boolean check(String input) {

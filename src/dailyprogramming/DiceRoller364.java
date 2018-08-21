@@ -11,12 +11,13 @@ import java.util.Scanner;
 /**
  *
  * @author benrh
+ * https://www.reddit.com/r/dailyprogrammer/comments/8s0cy1/20180618_challenge_364_easy_create_a_dice_roller/
  */
 public class DiceRoller364 {
     public static void diceRoll() throws Exception {
         System.out.println("Insert dice rolls in NdM format. Type 'Done'when finished");
         Scanner importScanner = new Scanner(System.in);
-        ArrayList<String> inputs = new ArrayList<String>();
+        ArrayList<String> inputs = new ArrayList<>();
         while(importScanner.hasNext()) {
             String nextInput = importScanner.next();
             if(nextInput.toLowerCase().equals("done")) {

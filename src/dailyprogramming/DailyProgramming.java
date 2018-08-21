@@ -6,8 +6,6 @@
 package dailyprogramming;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
 
 /**
  *
@@ -15,17 +13,14 @@ import java.util.Scanner;
  */
 public class DailyProgramming {
 
-    /**
-     * @param args the command line arguments
-     */
+    final static String WORD_LIST_PATH = "enable1.txt";
+    
     public static void main(String[] args) {
-        System.out.println(IBeforeE.check("abeyancies"));
         try {
-            System.out.println(IBeforeE.checkFile(new File("C:\\Users\\BenHaas\\Documents\\NetBeansProjects\\DailyProgramming\\enable1.txt")));
-        } catch (FileNotFoundException e) {
-            System.out.println("File Not Found :(");
+            System.out.println(WordFunnel.countFiveFunnels());
+        }catch(Exception e) {
+            
         }
-        
     }
     
 }
