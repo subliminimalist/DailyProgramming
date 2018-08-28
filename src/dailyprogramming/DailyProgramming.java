@@ -16,11 +16,7 @@ public class DailyProgramming {
     final static String WORD_LIST_PATH = "enable1.txt";
     
     public static void main(String[] args) {
-        try {
-            System.out.println(WordFunnel.countFiveFunnels());
-        }catch(Exception e) {
-            
-        }
+        new AthleteSort();
     }
     
 }
